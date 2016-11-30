@@ -14,34 +14,38 @@ Pass på at du har på plass nødvendig programvare og har bruker på aktuelle n
 
 2 - Velg hvilken PR du skal sjekke. Trykk på den.
 
-3 - Scroll nedover siden og trykk "Show all checks"
+3 - Sjekk labels, om dette er npm så har du et ekstra punkt til slutt (pkt 18)
 
-4 - Sjekk at "greenkeeper/verify" er grønn
+4 - Scroll nedover siden og trykk "Show all checks"
 
-5 - Trykk "Merge pull request" og deretter "Confirm merge"
+5 - Sjekk at "greenkeeper/verify" er grønn
 
-6 - Gå til repoets forside og trykk "Clone or download"
+6 - Trykk "Merge pull request" og deretter "Confirm merge"
 
-7 - Velg clone with ssh og kopier linken
+7 - Gå til repoets forside og trykk "Clone or download"
 
-8 - Gå til egnet sted og skriv inn ```git clone <link til repoet>```
+8 - Velg clone with ssh og kopier linken (Trykk copy to clipboard ikonet)
 
-9 - Gå inn i mappen kjør ```npm install```
+9 - Åpne git shellet og cd deg til egnet sted og skriv inn ```git clone <link til repoet>```
 
-10 - Kjør ```npm test```
+10 - Gå inn i mappen kjør ```npm install```
 
-11 - Hvis alt er ok kjør ```code package.json```
+11 - Kjør ```npm test```
 
-12 - Oppdater version med minor + 1
+12 - Hvis alt er ok kjør ```code package.json```
 
-13 - Lagre
+13 - Oppdater version med minor + 1 (det siste tallet)
 
-14 - Kjør ```git commit -am "Updates version"```
+14 - Lagre
 
-15 - Kjør ```npm test```
+15 - Kjør ```git commit -am "Updates version"```
 
-16 - Hvis alt ok kjør ```git push```
+16 - Kjør ```npm test```
 
-17 - Slett mappen
+17 - Hvis alt ok kjør ```git push```
 
-18 - Repeat
+18 - dersom dette er en npm-modul: kjør ```npm publish```
+
+19 - Slett mappen
+
+20 - Repeat
